@@ -62,7 +62,7 @@ jobs:
           name: run tests
           command: |
             mkdir /tmp/test-results
-            bundle exec rspec test . --pattern ./spec/**/*_spec.rb
+            bundle exec rake test
 
       - run:
           name: run Pronto
