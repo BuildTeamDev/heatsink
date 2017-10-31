@@ -1,0 +1,3 @@
+module Heatsink
+  VERSION = '0.0.1'
+end

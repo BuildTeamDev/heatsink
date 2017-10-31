@@ -1,0 +1,116 @@
+PATH
+  remote: .
+  specs:
+    heatsink (0.0.1)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    addressable (2.5.2)
+      public_suffix (>= 2.0.2, < 4.0)
+    ast (2.3.0)
+    brakeman (4.0.1)
+    codecov (0.1.10)
+      json
+      simplecov
+      url
+    colorize (0.8.1)
+    docile (1.1.5)
+    erubis (2.7.0)
+    faraday (0.13.1)
+      multipart-post (>= 1.2, < 3)
+    fasterer (0.3.2)
+      colorize (~> 0.7)
+      ruby_parser (~> 3.7)
+    flay (2.10.0)
+      erubis (~> 2.7.0)
+      path_expander (~> 1.0)
+      ruby_parser (~> 3.0)
+      sexp_processor (~> 4.0)
+    gitlab (4.2.0)
+      httparty
+      terminal-table
+    httparty (0.15.6)
+      multi_xml (>= 0.5.2)
+    json (2.1.0)
+    metaclass (0.0.4)
+    minitest (5.10.3)
+    mocha (1.3.0)
+      metaclass (~> 0.0.1)
+    multi_xml (0.6.0)
+    multipart-post (2.0.0)
+    octokit (4.7.0)
+      sawyer (~> 0.8.0, >= 0.5.3)
+    parallel (1.12.0)
+    parser (2.4.0.0)
+      ast (~> 2.2)
+    path_expander (1.0.2)
+    powerpack (0.1.1)
+    pronto (0.9.5)
+      gitlab (~> 4.0, >= 4.0.0)
+      httparty (>= 0.13.7)
+      octokit (~> 4.7, >= 4.7.0)
+      rainbow (~> 2.1)
+      rugged (~> 0.24, >= 0.23.0)
+      thor (~> 0.19.0)
+    pronto-brakeman (0.9.1)
+      brakeman (>= 3.2.0)
+      pronto (~> 0.9.0)
+    pronto-fasterer (0.9.0)
+      fasterer (~> 0.3, >= 0.3.0)
+      pronto (~> 0.9.0)
+    pronto-flay (0.9.0)
+      flay (~> 2.8)
+      pronto (~> 0.9.0)
+    pronto-rubocop (0.9.0)
+      pronto (~> 0.9.0)
+      rubocop (~> 0.38, >= 0.35.0)
+    public_suffix (3.0.0)
+    rainbow (2.2.2)
+      rake
+    rake (10.5.0)
+    rubocop (0.51.0)
+      parallel (~> 1.10)
+      parser (>= 2.3.3.1, < 3.0)
+      powerpack (~> 0.1)
+      rainbow (>= 2.2.2, < 3.0)
+      ruby-progressbar (~> 1.7)
+      unicode-display_width (~> 1.0, >= 1.0.1)
+    ruby-progressbar (1.9.0)
+    ruby_parser (3.10.1)
+      sexp_processor (~> 4.9)
+    rugged (0.26.0)
+    sawyer (0.8.1)
+      addressable (>= 2.3.5, < 2.6)
+      faraday (~> 0.8, < 1.0)
+    sexp_processor (4.10.0)
+    simplecov (0.15.1)
+      docile (~> 1.1.0)
+      json (>= 1.8, < 3)
+      simplecov-html (~> 0.10.0)
+    simplecov-html (0.10.2)
+    terminal-table (1.8.0)
+      unicode-display_width (~> 1.1, >= 1.1.1)
+    thor (0.19.4)
+    unicode-display_width (1.3.0)
+    url (0.3.2)
+
+PLATFORMS
+  ruby
+  x64-mingw32
+
+DEPENDENCIES
+  bundler
+  codecov
+  heatsink!
+  minitest
+  mocha
+  pronto
+  pronto-brakeman
+  pronto-fasterer
+  pronto-flay
+  pronto-rubocop
+  rake
+
+BUNDLED WITH
+   1.16.0.pre.3

@@ -1,0 +1,43 @@
+AllCops:
+  Exclude:
+    - 'db/**'
+    - 'db/migrate/**'
+    - '**/templates/**/*'
+    - '**/vendor/**/*'
+    - '**/vendor/**/.*'
+    - '**/node_modules/**/*'
+    - 'actionpack/lib/action_dispatch/journey/parser.rb'
+
+# disable as performance is not needed and migration to ruby3 will be fine
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Documentation:
+  Exclude:
+   - '**/channels/**/*'
+   - '**/controllers/**/*'
+   - '**/helpers/**/*'
+   - '**/jobs/**/*'
+   - '**/mailers/**/*'
+   - '**/models/**/*'
+   - '**/views/**/*'
+
+# Enforce space after -> for readability
+# no plan on using this in ruby < 2.0
+Layout/SpaceInLambdaLiteral:
+  EnforcedStyle: require_space
+  Enabled: true
+
+# always expand empty methods to two lines to keep it consistent
+Style/EmptyMethod:
+  EnforcedStyle: expanded
+  Enabled: true
+
+Style/TrailingCommaInLiteral:
+  EnforcedStyleForMultiline: comma
+Style/TrailingCommaInArguments:
+  EnforcedStyleForMultiline: comma
+
+# a max of 80 is too small
+Metrics/LineLength:
+  Max: 180
