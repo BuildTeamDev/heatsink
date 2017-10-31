@@ -8,7 +8,7 @@ end
 
 task :default => :test
 
-task pronto: :environment do
+task :pronto do
   require 'pronto'
   Pronto::GemNames.new.to_a.each { |gem_name| require "pronto/#{gem_name}" }
 
