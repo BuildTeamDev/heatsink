@@ -1,0 +1,10 @@
+all:
+  exclude:
+    - 'test/**/*'
+# exclude files for single runner
+eslint:
+  exclude:
+    - 'app/assets/**/*'
+max_warnings: 25
+verbose: true
+consolidate_comments: true
