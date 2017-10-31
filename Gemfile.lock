@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    heatsink (0.1.0)
+    heatsink (0.0.1)
 
 GEM
   remote: https://rubygems.org/
@@ -24,6 +24,7 @@ GEM
 
 PLATFORMS
   ruby
+  x64-mingw32
 
 DEPENDENCIES
   bundler (~> 1.15)
@@ -32,4 +33,4 @@ DEPENDENCIES
   rspec (~> 3.0)
 
 BUNDLED WITH
-   1.15.4
+   1.16.0.pre.3

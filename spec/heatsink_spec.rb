@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 RSpec.describe Heatsink do
-  it 'has a version number' do
+  it 'has a version nu.circlecimber' do
     expect(Heatsink::VERSION).not_to be nil
   end
 
