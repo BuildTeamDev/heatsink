@@ -7,3 +7,15 @@ Rake::TestTask.new do |t|
 end
 
 task :default => :test
+
+task pronto: :environment do
+  require 'pronto'
+  Pronto::GemNames.new.to_a.each { |gem_name| require "pronto/#{gem_name}" }
+
+  formatter = Pronto::Formatter::GithubPullRequestReviewFormatter.new
+  status_formatter = Pronto::Formatter::GithubStatusFormatter.new
+  formatters = [formatter, status_formatter]
+
+  # we probably have to change the branch of this I guess...
+  Pronto.run('origin/master', '.', formatters)
+end
